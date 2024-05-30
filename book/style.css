@@ -1,0 +1,924 @@
+/* div {
+  border-color: rgb(255, 0, 0);
+  border: solid 1px;
+} */
+
+body {
+    background-color: #1f1a2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0 80px;
+    width: 1920px;
+    height: 3508px;
+  }
+
+  .container {
+    display: flex;
+    width: 1240px;
+    max-width: 100%;
+    gap: 20px;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .container {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+
+  .catalog {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .catalog {
+      white-space: initial;
+    }
+  }
+
+  .logo {
+    aspect-ratio: 2.63;
+    object-fit: auto;
+    object-position: center;
+    width: 105px;
+    max-width: 100%;
+  }
+
+  .catalog-box {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 16px;
+  }
+
+  @media (max-width: 991px) {
+    .catalog-box {
+      white-space: initial;
+    }
+  }
+
+  .catalog-items {
+    display: flex;
+    gap: 12px;
+    padding: 4px 0;
+  }
+
+  @media (max-width: 991px) {
+    .catalog-items {
+      white-space: initial;
+    }
+  }
+
+  .label {
+    font-family: Philosopher, sans-serif;
+  }
+
+  .icon {
+    aspect-ratio: 1.89;
+    object-fit: auto;
+    object-position: center;
+    width: 15px;
+    align-self: start;
+  }
+
+  .search-box {
+    border-radius: 5px;
+    background-color: #2b2244;
+    display: flex;
+    gap: 11px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    letter-spacing: -0.3px;
+    padding: 6px 12px;
+  }
+
+  @media (max-width: 991px) {
+    .search-box {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+
+  .search-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: start;
+  }
+
+  .favorite-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .favorite-box {
+      white-space: initial;
+    }
+  }
+
+  .favorite-icon {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+
+  @media (max-width: 991px) {
+    .favorite-icon {
+      white-space: initial;
+    }
+  }
+
+  .favorite-img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    align-self: center;
+  }
+
+  .favorite-label {
+    font-family: Philosopher, sans-serif;
+  }
+
+  .basket-icon {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+
+  @media (max-width: 991px) {
+    .basket-icon {
+      white-space: initial;
+    }
+  }
+
+  .basket-img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    align-self: center;
+  }
+
+  .basket-label {
+    font-family: Philosopher, sans-serif;
+  }
+
+  .login {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    align-self: stretch;
+    color: #1f1a2d;
+    padding: 12px 32px;
+    font: 700 15px Philosopher, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .login {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+
+  .categories {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    color: #fafafa;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.3px;
+    margin: 24px 0 0 57px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .categories {
+      flex-wrap: wrap;
+    }
+  }
+
+  .category-item {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Philosopher, sans-serif;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    padding: 6px 16px;
+  }
+
+  @media (max-width: 991px) {
+    .category-item {
+      white-space: initial;
+    }
+  }
+
+  .banner {
+    aspect-ratio: 4.55;
+    object-fit: auto;
+    object-position: center;
+    width: 1240px;
+    margin-top: 24px;
+    max-width: 100%;
+  }
+
+  .popular-section {
+    display: flex;
+    margin-top: 80px;
+    width: 1239px;
+    max-width: 100%;
+    gap: 20px;
+    font-weight: 400;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .popular-section {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .popular-title {
+    color: #fafafa;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 32px Philosopher, sans-serif;
+  }
+
+  .view-all {
+    align-self: start;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    color: #fff;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+
+  .view-all-img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+    stroke-width: 0.5px;
+    stroke: #fff;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  .popular-items {
+    margin-top: 33px;
+    width: 1240px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .popular-item-row {
+    gap: 20px;
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .popular-item-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .popular-item {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 25%;
+    margin-left: 0px;
+  }
+
+  .popular-item-box {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #2b2244;
+    display: flex;
+    flex-grow: 1;
+    gap: 8px;
+    width: 100%;
+    padding: 21px 9px;
+  }
+
+  .book-img {
+    aspect-ratio: 0.63;
+    object-fit: auto;
+    object-position: center;
+    width: 86px;
+  }
+
+  .book-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-rating {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+    letter-spacing: -0.3px;
+    padding: 0 1px;
+  }
+
+  .book-rating-star {
+    align-self: start;
+    display: flex;
+    gap: 5px;
+    flex: 1;
+  }
+
+  .star-icon {
+    aspect-ratio: 1.08;
+    object-fit: auto;
+    object-position: center;
+    width: 14px;
+    fill: #fff500;
+  }
+
+  .rating-label {
+    font-family: Philosopher, sans-serif;
+  }
+
+  .rating-img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+  }
+
+  .book-title {
+    color: #fff;
+    margin-top: 7px;
+    font: 400 15px/15px Philosopher, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .book-author {
+    color: #fff;
+    letter-spacing: -0.3px;
+    margin-top: 8px;
+    font: 400 14px Philosopher, sans-serif;
+  }
+
+  .book-price-cart {
+    display: flex;
+    margin-top: 29px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .add-to-cart {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #1f1a2d;
+    padding: 8px 12px;
+    font: 700 15px Philosopher, sans-serif;
+  }
+
+  .book-price {
+    color: #fff;
+    margin: auto 0;
+    font: 400 24px Philosopher, sans-serif;
+  }
+
+  .section {
+    align-self: stretch;
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .section {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .section-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+
+  .circle {
+    background-color: rgba(43, 34, 68, 0.09);
+    border-radius: 50%;
+  }
+
+  .circle-large {
+    width: 123px;
+    height: 123px;
+    margin-top: 75px;
+  }
+
+  .circle-small {
+    width: 68px;
+    height: 123px;
+    margin-top: 125px;
+  }
+
+  .banner-img {
+    aspect-ratio: 0.99;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    flex-grow: 1;
+  }
+
+  .title {
+    color: #fafafa;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    font: 32px Philosopher, sans-serif;
+  }
+
+  .heading {
+    color: #fafafa;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 32px Philosopher, sans-serif;
+  }
+
+  .heading-section {
+    display: flex;
+    margin-top: 108px;
+    width: 1240px;
+    max-width: 100%;
+    gap: 20px;
+    font-weight: 400;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .heading-section {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .section-title {
+    align-self: start;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    color: #fff;
+    flex: 1;
+  }
+
+  .section-content-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+    stroke-width: 0.5px;
+    stroke: #fff;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  @media (max-width: 991px) {
+    .section-content {
+      max-width: 100%;
+    }
+  }
+
+  .content-box {
+    margin-top: 34px;
+    width: 1240px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .content-row {
+    gap: 20px;
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .content-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .content-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+
+  .content-box {
+    disply: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1.29;
+    flex-grow: 1;
+    color: #fff;
+    padding: 30px 10px 7px 24px;
+  }
+
+  @media (max-width: 991px) {
+    .content-box {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  .background-img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .content-title {
+    position: relative;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    font: 400 24px Philosopher, sans-serif;
+  }
+
+  .content-subtitle {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    gap: 6px;
+    font-weight: 700;
+  }
+
+  .discount-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+
+  .discount-text {
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    font: 40px Philosopher, sans-serif;
+  }
+
+  .discount-details {
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    margin-top: 21px;
+    font: 400 24px Philosopher, sans-serif;
+  }
+
+  .shop-now {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 20px;
+    color: #1f1a2d;
+    padding: 8px 12px;
+    font: 15px Philosopher, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .content-box {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  .discount-img {
+    aspect-ratio: 0.93;
+    object-fit: auto;
+    object-position: center;
+    width: 214px;
+    border-radius: 5px;
+    max-width: 100%;
+  }
+
+  .info-section {
+    display: flex;
+    margin-top: 108px;
+    width: 1240px;
+    max-width: 100%;
+    gap: 20px;
+    font-weight: 400;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .info-section {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .info-title {
+    color: #fafafa;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 32px Philosopher, sans-serif;
+  }
+
+  .info-content {
+    align-self: start;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    color: #fff;
+    flex: 1;
+  }
+
+  .info-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+    stroke-width: 0.5px;
+    stroke: #fff;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  .section-box {
+    margin-top: 33px;
+    width: 1240px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .section-row {
+    gap: 20px;
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .section-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .section-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+
+  .section-box {
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    flex-grow: 1;
+    width: 100%;
+    padding: 34px 19px;
+  }
+
+  @media (max-width: 991px) {
+    .section-box {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+    .row {
+    gap: 20px;
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 73%;
+    margin-left: 0px;
+  }
+
+  .secondary-col {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 27%;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .col,
+    .secondary-col {
+      width: 100%;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 32px;
+  }
+
+  .card-title {
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    font: 400 32px Philosopher, sans-serif;
+  }
+
+  .card-detail {
+    display: flex;
+    margin-top: 20px;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .detail-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail-title {
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: -0.3px;
+    font: 400 22px Philosopher, sans-serif;
+  }
+
+  .button {
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 71px;
+    color: #1f1a2d;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font: 700 15px Philosopher, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .button {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+
+  .image {
+    aspect-ratio: 0.62;
+    object-fit: auto;
+    object-position: center;
+    width: 98px;
+    margin-top: 7px;
+  }
+
+  .large-image {
+    aspect-ratio: 0.63;
+    object-fit: auto;
+    object-position: center;
+    width: 103px;
+    margin-top: 47px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .large-image {
+      margin-top: 40px;
+    }
+  }
+
+  .full-width-image {
+    aspect-ratio: 1.28;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  @media (max-width: 991px) {
+    .full-width-image {
+      margin-top: 20px;
+    }
+  }
+
+  .review-section {
+    display: flex;
+    margin-top: 67px;
+    width: 1238px;
+    max-width: 100%;
+    gap: 19px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 991px) {
+    .review-section {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .review-box {
+    border-radius: 5px;
+    background-color: #2b2244;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    padding: 26px 12px;
+  }
+
+  .review-author {
+    color: #7c7c7c;
+    text-align: center;
+    font: 12px Philosopher, sans-serif;
+  }
+
+  .review-title {
+    text-align: center;
+    margin-top: 11px;
+    font: 16px Philosopher, sans-serif;
+  }
+
+  .author-image {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 44px;
+    border-radius: 50%;
+    margin-top: 16px;
+  }
+
+  .review-text {
+    margin-top: 12px;
+    font: 14px Philosopher, sans-serif;
+  }
+
+  .review-fulltext {
+    text-align: center;
+    align-self: stretch;
+    margin-top: 12px;
+    font: 10px/12px Philosopher, sans-serif;
+  }
+
+  .action-btn {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 32px;
+    stroke-width: 0.5px;
+    stroke: #fff;
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin: auto 0;
+  }
