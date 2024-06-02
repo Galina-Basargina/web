@@ -1,43 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- комментарий -->
-    <section class="review-section">
-      <div class="review-box">
-        <div class="review-author">Нанетти Анджела</div>
-        <div class="review-title">Мой дедушка был вишней</div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/53573466124aafb172f3974894ababccdcd4b69683f38e162823d35c413b8703?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-          class="author-image"
-          alt="Author"
-        />
-        <div class="review-text">Виктория Переска</div>
-        <div class="review-fulltext">
-          Эту историю я прочитала за один день и с самых первых строк глаза были
-          на мокром месте. Хоть эта история итальянской писательницы...
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Верхнее меню -->
+      <section class="container">
+        <header class="catalog">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/889e91373ba8208aac934728f10dd55792f09d6bef84a35ee58529abc3cdd9bb?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="logo" alt="Logo" />
+          <nav class="catalog-box">
+            <div class="catalog-items">
+              <div class="label">Каталог</div>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/78ccc677a12eda8e0b8bea8bc8042bf06aa05bd3fc43ed27a903e5f394daa103?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="icon" alt="Icon" />
+            </div>
+          </nav>
+        </header>
+        <section class="search-box">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4c7209fd317a8bc177f2af4694af7a0d0769f03fd84da3901c33657d4714d73?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="search-icon" alt="Search Icon" />
+          <input name="s" placeholder="Поиск" type="search" class="label w768">
+        </section>
+        <section class="favorite-box">
+          <div class="favorite-icon">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a49793d3d5db2861a36f5c08efd36cae86f0fad72956b366d0e8d7148011e4dd?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="favorite-img" alt="Favorite" />
+            <div class="favorite-label w768">Избранное</div>
+          </div>
+          <div class="basket-icon">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6731357b90f5baa9a3c3232106d40016277028cc38b3c9753f8f4ab502f66c63?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="basket-img" alt="Basket" />
+            <div class="basket-label w768">Корзина</div>
+          </div>
+          <button class="login">Войти</button>
+        </section>
+      </section>
+      
+      <!-- строка кнопок -->
+      <nav class="categories">
+        <button class="category-item">Все</button>
+        <button class="category-item">Фэнтези</button>
+        <button class="category-item">Детективы</button>
+        <button class="category-item">Боевики</button>
+        <button class="category-item">Проза</button>
+        <button class="category-item">Бизнес</button>
+        <button class="category-item">Эзотерика</button>
+        <button class="category-item">Психология</button>
+        <button class="category-item">Мода</button>
+        <button class="category-item">Кулинария</button>
+        <button class="category-item">Биография</button>
+        <button class="category-item">Хобби</button>
+        <button class="category-item">Домашние животные</button>
+      </nav>
+      
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/674ce40b2fdd86ea83fab7512d885bd5ec969db0b1c72b9eabf533946f33118e?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="banner" alt="Banner" />
+      
+      <!-- Популярное на 2 строки -->
+      <section class="popular-section">
+        <h2 class="popular-title">Популярное</h2>
+        <div class="view-all">
+          <div class="label">Смотреть все</div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/336aafe9ea4807486ebaac19bcb5c04bf485953e7067682c45b75ef83a54c1c5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="view-all-img" alt="View All" />
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="popular-items w768">
+        <div class="popular-item-row">
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/909a52bf2aa7aaf9688a111578dad1d9efcf220c2a5cc182b885a03bc0cf2e02?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42627663f3406a9fe82d18c3d208ca168cf65eba8624183e8b6471d73607f03e?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc3b9da6296d9557b6d67b50380d733908218a416317a1154736dab8b6177a8c?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac726c022d2537d5389ffe04902c8a01a6141b956e4d821ad53aadf889777f71?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item img4">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8702ad39348b312d1be5d69282070e9dd1ea087f02d4e58e866887908cacbde3?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/997e72fbd25909d41d5244ed65185a903bf7f0dbbad65b39df5769f83899f8f8?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>  
+      <section class="popular-items">
+        <div class="popular-item-row">
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/909a52bf2aa7aaf9688a111578dad1d9efcf220c2a5cc182b885a03bc0cf2e02?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42627663f3406a9fe82d18c3d208ca168cf65eba8624183e8b6471d73607f03e?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc3b9da6296d9557b6d67b50380d733908218a416317a1154736dab8b6177a8c?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac726c022d2537d5389ffe04902c8a01a6141b956e4d821ad53aadf889777f71?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="img4 popular-item ">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8702ad39348b312d1be5d69282070e9dd1ea087f02d4e58e866887908cacbde3?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/997e72fbd25909d41d5244ed65185a903bf7f0dbbad65b39df5769f83899f8f8?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      <!-- Хиты продаж -->
+      <section class="popular-section">
+        <h2 class="popular-title">Хиты продаж</h2>
+      </section>
+      <section class="popular-items">
+        <div class="popular-item-row">
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/909a52bf2aa7aaf9688a111578dad1d9efcf220c2a5cc182b885a03bc0cf2e02?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42627663f3406a9fe82d18c3d208ca168cf65eba8624183e8b6471d73607f03e?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc3b9da6296d9557b6d67b50380d733908218a416317a1154736dab8b6177a8c?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac726c022d2537d5389ffe04902c8a01a6141b956e4d821ad53aadf889777f71?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item img4">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8702ad39348b312d1be5d69282070e9dd1ea087f02d4e58e866887908cacbde3?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/997e72fbd25909d41d5244ed65185a903bf7f0dbbad65b39df5769f83899f8f8?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section class="info-section">
-      <h2 class="info-title">Акции</h2>
-      <div class="info-content">
-        <div class="label">Смотреть все</div>
-        <img
-          loading="lazy"
-          src="./img/4view-all-img.svg"
-          class="info-icon"
-          alt="View All"
-        />
-      </div>
-    </section>
+
+      <!-- Скоро в продаже на 2 строки -->
+      <section class="popular-section">
+        <h2 class="popular-title">Скоро в прожаже</h2>
+        <div class="view-all">
+          <div class="label">Смотреть все</div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/336aafe9ea4807486ebaac19bcb5c04bf485953e7067682c45b75ef83a54c1c5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="view-all-img" alt="View All" />
+        </div>
+      </section>
+      <section class="popular-items">
+        <div class="popular-item-row">
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/909a52bf2aa7aaf9688a111578dad1d9efcf220c2a5cc182b885a03bc0cf2e02?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42627663f3406a9fe82d18c3d208ca168cf65eba8624183e8b6471d73607f03e?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc3b9da6296d9557b6d67b50380d733908218a416317a1154736dab8b6177a8c?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac726c022d2537d5389ffe04902c8a01a6141b956e4d821ad53aadf889777f71?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item img4">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8702ad39348b312d1be5d69282070e9dd1ea087f02d4e58e866887908cacbde3?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/997e72fbd25909d41d5244ed65185a903bf7f0dbbad65b39df5769f83899f8f8?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>  
+      <section class="popular-items w768">
+        <div class="popular-item-row">
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/909a52bf2aa7aaf9688a111578dad1d9efcf220c2a5cc182b885a03bc0cf2e02?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42627663f3406a9fe82d18c3d208ca168cf65eba8624183e8b6471d73607f03e?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44fcbfef1b5f5eedcb756adb9706c2766b4364310c46ee9b4baccea715306b5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc3b9da6296d9557b6d67b50380d733908218a416317a1154736dab8b6177a8c?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac726c022d2537d5389ffe04902c8a01a6141b956e4d821ad53aadf889777f71?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="popular-item img4">
+            <div class="popular-item-box">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8702ad39348b312d1be5d69282070e9dd1ea087f02d4e58e866887908cacbde3?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="book-img" alt="Book" />
+              <div class="book-details">
+                <div class="book-rating">
+                  <div class="book-rating-star">
+                    <img loading="lazy" src="./img/star-icon.svg" class="star-icon" alt="Star" />
+                    <div class="rating-label">4.9</div>
+                  </div>
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/997e72fbd25909d41d5244ed65185a903bf7f0dbbad65b39df5769f83899f8f8?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="rating-img" alt="Rating" />
+                </div>
+                <div class="book-title">Лягушка, слон и брокколи. Как жить и как не надо</div>
+                <div class="book-author">Алексей Марков</div>
+                <div class="book-price-cart">
+                  <button class="add-to-cart">В корзину</button>
+                  <div class="book-price">575₽</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      
+      <!-- Акции на 3 картинки -->
+      <section class="popular-section">
+        <h2 class="popular-title">Акции</h2>
+        <div class="view-all">
+          <div class="label">Смотреть все</div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/336aafe9ea4807486ebaac19bcb5c04bf485953e7067682c45b75ef83a54c1c5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="view-all-img" alt="View All" />
+        </div>
+      </section>
     <section class="popular-section">
       <div class="space-card">
         <p class="popular-title">Увлекательные приключения</p>
@@ -71,230 +540,105 @@
       </div>
     </section>
 
-    <section class="section-box">
-      <div class="section-row">
-        <div class="section-column">
-          <div class="box">
-            <div class="box-title">Книжки с черными обложками</div>
-            <div class="box-detail">
-              <div class="detail-item">
-                <div class="detail-title">Мифы, тайны и вдохновение</div>
-                <button class="button">Смотреть</button>
-              </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bcc981cfeb954128a1a57718ca689a01ef0099b6e68d55ec2eb50d42b382133?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-                class="image"
-                alt="Item Image"
-              />
-            </div>
-          </div>
+
+      <!-- Главные отзывы недели -->
+      <section class="popular-section">
+        <h2 class="popular-title">Главные отзывы недели</h2>
+        <div class="view-all">
+          <div class="label">Смотреть все</div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/336aafe9ea4807486ebaac19bcb5c04bf485953e7067682c45b75ef83a54c1c5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="view-all-img" alt="View All" />
         </div>
-        <div class="secondary-col">
+      </section>
+      <section class="popular-items">
+        <div class="popular-item-row">
+          <div class="review-box">
+            <div class="review-author">Нанетти Анджела</div>
+            <div class="review-title">Мой дедушка был вишней</div>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/53573466124aafb172f3974894ababccdcd4b69683f38e162823d35c413b8703?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="author-image" alt="Author" />
+            <div class="review-text">Виктория Переска</div>
+            <div class="review-fulltext">Эту историю я прочитала за один день и с самых первых строк глаза были на мокром месте. Хоть эта история итальянской писательницы...</div>
+            </div>
+            <div class="review-box">
+              <div class="review-author">Нанетти Анджела</div>
+              <div class="review-title">Мой дедушка был вишней</div>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/53573466124aafb172f3974894ababccdcd4b69683f38e162823d35c413b8703?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="author-image" alt="Author" />
+              <div class="review-text">Виктория Переска</div>
+              <div class="review-fulltext">Эту историю я прочитала за один день и с самых первых строк глаза были на мокром месте. Хоть эта история итальянской писательницы...</div>
+            </div>
+            <div class="review-box">
+              <div class="review-author">Нанетти Анджела</div>
+              <div class="review-title">Мой дедушка был вишней</div>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/53573466124aafb172f3974894ababccdcd4b69683f38e162823d35c413b8703?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="author-image" alt="Author" />
+              <div class="review-text">Виктория Переска</div>
+              <div class="review-fulltext">Эту историю я прочитала за один день и с самых первых строк глаза были на мокром месте. Хоть эта история итальянской писательницы...</div>
+            </div>
+        </div>
+      </section>
+
+
+
+      <!-- Подборки книг -->
+      <section class="popular-section">
+        <h2 class="popular-title">Подборки книг</h2>
+        <div class="view-all">
+          <div class="label">Смотреть все</div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/336aafe9ea4807486ebaac19bcb5c04bf485953e7067682c45b75ef83a54c1c5?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="view-all-img" alt="View All" />
+        </div>
+      </section>
+      <section class="popular-section">
+        <div class="popular-card">
           <img
-            loading="lazy"
+            src="./img/black-book.png"
+            alt=""
+          />
+        </div>
+        <div class="popular-card">
+          <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/876eadd31678b643eaf9b103525a909cc26eb244790b2c1260b4687c9660a6ae?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-            class="full-width-image"
-            alt="Full Width"
-          />
+            alt=""/>
         </div>
-      </div>
-    </section>
-
-    <section class="section-box">
-      <div class="section-row">
-        <div class="section-column">
-          <div class="box">
-            <div class="box-title">Книжки с черными обложками</div>
-            <div class="box-detail">
-              <div class="detail-item">
-                <div class="detail-title">Мифы, тайны и вдохновение</div>
-                <button class="button">Смотреть</button>
-              </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bcc981cfeb954128a1a57718ca689a01ef0099b6e68d55ec2eb50d42b382133?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-                class="image"
-                alt="Item Image"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="secondary-col">
+        <div class="popular-card">
           <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4ebac1a925f93ada98d48527b9472802a73b984b4638b5d026a2b8a9f5e0763?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-            class="full-width-image"
-            alt="Full Width"
-          />
+            src="./img/black-book2.png"
+            alt=""/>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-box">
-      <div class="section-row">
-        <div class="section-column">
-          <div class="box">
-            <div class="box-title">Книжки с черными обложками</div>
-            <div class="box-detail">
-              <div class="detail-item">
-                <div class="detail-title">Мифы, тайны и вдохновение</div>
-                <button class="button">Смотреть</button>
-              </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bcc981cfeb954128a1a57718ca689a01ef0099b6e68d55ec2eb50d42b382133?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-                class="image"
-                alt="Item Image"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="secondary-col">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/876eadd31678b643eaf9b103525a909cc26eb244790b2c1260b4687c9660a6ae?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-            class="full-width-image"
-            alt="Full Width"
-          />
-        </div>
-      </div>
-    </section>
+      <!-- Нижнее меню -->
+      <footer>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/889e91373ba8208aac934728f10dd55792f09d6bef84a35ee58529abc3cdd9bb?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&" class="logo" alt="Logo" />
 
-    <section class="review-section">
-      <div class="review-box">
-        <div class="review-author">Нанетти Анджела</div>
-        <div class="review-title">Мой дедушка был вишней</div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/53573466124aafb172f3974894ababccdcd4b69683f38e162823d35c413b8703?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-          class="author-image"
-          alt="Author"
-        />
-        <div class="review-text">Виктория Переска</div>
-        <div class="review-fulltext">
-          Эту историю я прочитала за один день и с самых первых строк глаза были
-          на мокром месте. Хоть эта история итальянской писательницы...
-        </div>
-      </div>
-      <div class="review-box">
-        <div class="review-author">Нанетти Анджела</div>
-        <div class="review-title">Мой дедушка был вишней</div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/53573466124aafb172f3974894ababccdcd4b69683f38e162823d35c413b8703?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-          class="author-image"
-          alt="Author"
-        />
-        <div class="review-text">Виктория Переска</div>
-        <div class="review-fulltext">
-          Эту историю я прочитала за один день и с самых первых строк глаза были
-          на мокром месте. Хоть эта история итальянской писательницы...
-        </div>
-      </div>
-    </section>
-
-    <section class="info-section">
-      <h2 class="info-title">Хиты продаж</h2>
-      <div class="info-content">
-        <div class="label">Смотреть все</div>
-        <img
-          loading="lazy"
-          src="./img/4view-all-img.svg"
-          class="info-icon"
-          alt="View All"
-        />
-      </div>
-    </section>
-
-    <section class="section-box">
-      <div class="section-row">
-        <div class="section-column">
-          <div class="box">
-            <div class="box-title">Книжки с черными обложками</div>
-            <div class="box-detail">
-              <div class="detail-item">
-                <div class="detail-title">Мифы, тайны и вдохновение</div>
-                <button class="button">Смотреть</button>
-              </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bcc981cfeb954128a1a57718ca689a01ef0099b6e68d55ec2eb50d42b382133?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-                class="image"
-                alt="Item Image"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="secondary-col">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/876eadd31678b643eaf9b103525a909cc26eb244790b2c1260b4687c9660a6ae?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-            class="full-width-image"
-            alt="Full Width"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="banner-section">
-      <div class="banner-row">
-        <div class="banner-column">
-          <div class="banner-box">
-            <div class="banner-title">Книжки с черными обложками</div>
-            <div class="banner-detail">
-              <div class="detail-item">
-                <div class="detail-title">Мифы, тайны и вдохновение</div>
-                <button class="banner-button">Смотреть</button>
-              </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bcc981cfeb954128a1a57718ca689a01ef0099b6e68d55ec2eb50d42b382133?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-                class="banner-image"
-                alt="Item Image"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="secondary-col">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/876eadd31678b643eaf9b103525a909cc26eb244790b2c1260b4687c9660a6ae?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-            class="full-width-image"
-            alt="Full Width"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="card-section">
-      <div class="card-row">
-        <div class="card-column">
-          <div class="card-box">
-            <div class="card-title">Книжки с черными обложками</div>
-            <div class="card-detail">
-              <div class="detail-item">
-                <div class="detail-title">Мифы, тайны и вдохновение</div>
-                <button class="card-button">Смотреть</button>
-              </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bcc981cfeb954128a1a57718ca689a01ef0099b6e68d55ec2eb50d42b382133?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-                class="card-image"
-                alt="Item Image"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="secondary-col">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/876eadd31678b643eaf9b103525a909cc26eb244790b2c1260b4687c9660a6ae?apiKey=ef3b4ec20133429287a8f47ba3b47d9d&"
-            class="full-width-image"
-            alt="Full Width"
-          />
-        </div>
-      </div>
-    </section>
-  </body>
+        <table>
+          <tr>
+            <td>Каталог</td>
+            <td>Остались вопросы? Напишите нам</td>
+            <td>Бесплатный звонок по России</td>
+          </tr>
+          <tr>
+            <td>Партнерская программа</td>
+            <td>korablik@yandex.ru</td>
+            <td>8 (988) 545-55-55</td>
+          </tr>
+          <tr>
+            <td>Подробнее о нас</td>
+            <td>
+              <img src="./img/vk.png" alt="vk" class="table-img">
+              <img src="./img/classmates.png" alt="classmates" class="table-img">
+              <img src="./img/twiter.png" alt="twiter" class="table-img">
+            </td>
+            <td>Мы в социальных сетях</td>
+          </tr>
+          <tr>
+            <td>Контакты</td>
+            <td>Мы на связи с 9 по 18 часов<br>(GMT +03:00)</td>
+            <td>
+              <img src="./img/vk.png" alt="vk" class="table-img">
+              <img src="./img/classmates.png" alt="classmates" class="table-img">
+              <img src="./img/twiter.png" alt="twiter" class="table-img">
+              <img src="./img/telegram.png" alt="telegram" class="table-img">
+            </td>
+          </tr>
+        </table>
+      </footer>
+      </body>
 </html>
